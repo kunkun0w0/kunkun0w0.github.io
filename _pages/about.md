@@ -17,9 +17,8 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! My name is Zekun Li (李泽坤), a senior undergraduate student at the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), majoring in computer science. 
-Currently, I am working with Dr. [Fang Zhao](https://zhaofang0627.github.io/) at [Tencent AI Lab](https://ai.tencent.com/ailab/zh/index).
-And I am also an incoming CS Ph.D. student at [Brown University](https://www.brown.edu/).
+Hi! My name is Zekun Li (李泽坤), an incoming Ph.D. student in Computer Science at [Brown University](https://www.brown.edu/). I work with [Prof. Srinath Sridhar](https://cs.brown.edu/people/ssrinath/index.html) at [Interactive 3D Vision & Learning Lab](https://ivl.cs.brown.edu/).
+I received my B. Eng. degree with honors in Computer Science at the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)). My undergraduate research advisor is (Prof. Zhao Kang)[https://zhaokang.site/].
 My research interest focuses on Generative Model and Compter Graphics.
 
 I am keen on combining knowledge-based principles and learning-based networks to achieve robust, responsible, controllable, and creative models for visual content generation.
@@ -67,12 +66,12 @@ Eliminating Gradient Conflict in Reference-based Line-art Colorization
 
 # 📖 Educations
 - *2023.09 - 2028.06 (expected)*, <b>Ph.D. in Computer Science</b>, [Brown University](https://www.brown.edu/).
-- *2019.09 - 2023.06*, <b>Bachelor’s Degree in Computer Science</b>, University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)).
+- *2019.09 - 2023.06*, <b>B. Eng. Degree in Computer Science</b>, University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)).
 
 <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Internships
-- *2022.10 - 2023.6*, Research Intern, [Tencent AI Lab](https://ai.tencent.com/ailab/en/index), working on garment animation and generation, supervied by Prof. [Fang Zhao](https://zhaofang0627.github.io/).
-- *2020.09 - 2022.09*, Research Intern, Cognitive Computing and Intelligent Decision Lab at [UESTC](https://www.uestc.edu.cn/) in China, working on image translation, supervied by Prof. [Zhao Kang](https://zhaokang.site/).
+- *2022.10 - 2023.6*, Research Intern, [Tencent AI Lab](https://ai.tencent.com/ailab/en/index), working on garment animation and generation, supervied by [Prof. Fang Zhao](https://zhaofang0627.github.io/).
+- *2020.09 - 2022.09*, Research Intern, Cognitive Computing and Intelligent Decision Lab at [UESTC](https://www.uestc.edu.cn/) in China, working on image translation, supervied by [Prof. Zhao Kang](https://zhaokang.site/).
