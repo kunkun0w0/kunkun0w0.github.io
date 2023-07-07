@@ -34,31 +34,45 @@ If you are interested in working with me, please freely contact me without any h
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR2023</div><img src='images/AnchorDEF.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+Learning Anchor Transformations for 3D Garment Animation
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+Fang Zhao, <b><u>Zekun Li</u></b>, Shaoli Huang, Junwu Weng, Tianfei Zhou, Guosen Xie, Jue Wang, Ying Shan
+<br>
+[[paper]](https://arxiv.org/abs/2304.00761)    [[project]](https://semanticdh.github.io/AnchorDEF/)
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+**TL;DR:** design adaptive anchors to predict 3D garment animation from a body motion sequence, especially for loose-fitting garments.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV2022</div><img src='images/SGA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+Eliminating Gradient Conflict in Reference-based Line-art Colorization
+
+<b><u>Zekun Li</u></b>, Zhengyang Geng, Zhao Kang, Wenyu Chen, and Yibo  Yang
+<br>
+[[paper]](https://arxiv.org/abs/2207.06095)    [[code]](https://github.com/kunkun0w0/SGA)
+
+**TL;DR:** design a novel BP scheme to solve the gradient issue in Attention.
+</div>
+</div>
 
 <!-- # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2023.09 - 2028.06 (expected)*, <b>Ph.D. in Computer Science</b>, [Brown University](https://www.brown.edu/).
+- *2019.09 - 2023.06*, <b>Bachelor’s Degree in Computer Science</b>, University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)).
 
 <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2022.10 - 2023.6*, Research Intern, [Tencent AI Lab](https://ai.tencent.com/ailab/en/index), working on garment animation and generation, supervied by Prof. [Fang Zhao](https://zhaofang0627.github.io/).
+- *2020.09 - 2022.09*, Research Intern, Cognitive Computing and Intelligent Decision Lab at [UESTC](https://www.uestc.edu.cn/) in China, working on image translation, supervied by Prof. [Zhao Kang](https://zhaokang.site/).
