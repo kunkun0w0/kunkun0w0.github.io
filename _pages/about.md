@@ -17,9 +17,15 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+Hi! My name is Zekun Li (李泽坤), a senior undergraduate student at the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), majoring in computer science. 
+Currently, I am working with Dr. [Fang Zhao](https://zhaofang0627.github.io/) at [Tencent AI Lab](https://ai.tencent.com/ailab/zh/index).
+And I am also an incoming CS Ph.D. student at [Brown University](https://www.brown.edu/).
+My research interest focuses on Generative Model and Compter Graphics.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+I am keen on combining knowledge-based principles and learning-based networks to achieve robust, responsible, controllable, and creative models for visual content generation.
+And I mainly focus on neural implicit shape and physically-based modeling.
+
+If you are interested in working with me, please freely contact me without any hesitation! (○'◡'○)ﾉ
 
 
 # 🔥 News
