@@ -23,7 +23,7 @@ Before studying in Brown, I received my B. Eng. degree with honors in Computer S
 My research interest focuses on Generative Model and Compter Graphics. I am keen on combining knowledge-based principles and learning-based networks to achieve robust, responsible, controllable, and creative models for visual content generation.
 And I mainly focus on neural implicit shape and physically-based modeling.
 
-I am looking for research internship for 24 Summer, please freely contact me without any hesitation! (○'◡'○)ﾉ  \left[ [CV](images/CV_ZekunLi.pdf) \right]
+I am looking for research internship for 24 Summer, here is my [CV](images/CV_ZekunLi.pdf). Please freely contact me without any hesitation! (○'◡'○)ﾉ 
 
 
 <!-- # 🔥 News
