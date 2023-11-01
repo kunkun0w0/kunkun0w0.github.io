@@ -21,7 +21,7 @@ Hi! My name is Zekun Li (李泽坤). I am the first year Ph.D. student in Comput
 Before studying in Brown, I received my B. Eng. degree with honors in Computer Science at the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)). My undergraduate research advisor is [Prof. Zhao Kang](https://zhaokang.site/).
 
 My research interest focuses on Generative Model and Compter Graphics. I am keen on combining knowledge-based principles and learning-based networks to achieve robust, responsible, controllable, and creative models for visual content generation.
-And I mainly focus on neural implicit shape and physically-based modeling.
+And I mainly focus on character animation and human-object interation.
 
 I am looking for research internship for 24 Summer, here is my [CV](images/CV_ZekunLi.pdf). Please freely contact me without any hesitation! (○'◡'○)ﾉ 
 
