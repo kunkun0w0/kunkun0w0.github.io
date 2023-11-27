@@ -49,7 +49,7 @@ Zhengming Yu, Zhiyang Dou, Xiaoxiao Long, Cheng Lin, <b><u>Zekun Li</u></b>, Yua
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR2023</div><img src='images/AnchorDEF.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Learning Anchor Transformations for 3D Garment Animation
+**Learning Anchor Transformations for 3D Garment Animation**
 
 Fang Zhao, <b><u>Zekun Li</u></b>, Shaoli Huang, Junwu Weng, Tianfei Zhou, Guosen Xie, Jue Wang, Ying Shan
 <br>
@@ -63,7 +63,7 @@ Fang Zhao, <b><u>Zekun Li</u></b>, Shaoli Huang, Junwu Weng, Tianfei Zhou, Guose
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV2022</div><img src='images/SGA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Eliminating Gradient Conflict in Reference-based Line-art Colorization
+**Eliminating Gradient Conflict in Reference-based Line-art Colorization**
 
 <b><u>Zekun Li</u></b>, Zhengyang Geng, Zhao Kang, Wenyu Chen, and Yibo  Yang
 <br>
