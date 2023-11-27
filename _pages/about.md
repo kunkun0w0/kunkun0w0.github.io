@@ -32,6 +32,20 @@ I am looking for research internship for 24 Summer, here is my [CV](images/CV_Ze
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/SurfD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Surf-D: High-Quality Surface Generation for Arbitrary Topologies using Diffusion Models**
+
+Zhengming Yu, Zhiyang Dou, Xiaoxiao Long, Cheng Lin, <b><u>Zekun Li</u></b>, Yuan Liu, Norman Müller, Taku Komura, Marc Habermann, Christian Theobalt, Xin Li, Wenping Wang
+<br>
+[[paper]]()    [[project]](https://yzmblog.github.io/projects/SurfD/)
+
+**TL;DR:** design a novel UDF-based latent diffusion model for shape generation.
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR2023</div><img src='images/AnchorDEF.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
