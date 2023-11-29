@@ -39,7 +39,7 @@ I am looking for research internship for 24 Summer, here is my [CV](images/CV_Ze
 
 Zhengming Yu, Zhiyang Dou, Xiaoxiao Long, Cheng Lin, <b><u>Zekun Li</u></b>, Yuan Liu, Norman Müller, Taku Komura, Marc Habermann, Christian Theobalt, Xin Li, Wenping Wang
 <br>
-[[paper]]()    [[project]](https://yzmblog.github.io/projects/SurfD/)
+[[paper]](https://arxiv.org/abs/2311.17050)    [[project]](https://yzmblog.github.io/projects/SurfD/)
 
 **TL;DR:** design a novel UDF-based latent diffusion model for shape generation.
 </div>
