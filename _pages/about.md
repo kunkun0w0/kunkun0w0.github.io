@@ -32,6 +32,19 @@ I am looking for research internship for 24 Summer, here is my [CV](images/CV_Ze
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/MANUS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**MANUS: Markerless Grasp Capture using Articulated 3D Gaussians**
+
+Chandradeep Pokhariya, Ishaan Nikhil Shah, Angela Xing, <b><u>Zekun Li</u></b>, Kefan Chen, Avinash Sharma, Srinath Sridhar
+<br>
+[[paper]]()    [[project]](https://ivl.cs.brown.edu/research/manus.html)
+
+**TL;DR:** provide a new multi-view grasping dataset with contact annotation and articulated Gaussian hand model for the benchmark.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/SurfD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
