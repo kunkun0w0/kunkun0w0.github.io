@@ -39,7 +39,7 @@ I am looking for research internship for 24 Summer, here is my [CV](images/CV_Ze
 
 Chandradeep Pokhariya, Ishaan Nikhil Shah, Angela Xing, <b><u>Zekun Li</u></b>, Kefan Chen, Avinash Sharma, Srinath Sridhar
 <br>
-[[paper]]()    [[project]](https://ivl.cs.brown.edu/research/manus.html)
+[[paper]](https://arxiv.org/abs/2312.02137)    [[project]](https://ivl.cs.brown.edu/research/manus.html)
 
 **TL;DR:** provide a new multi-view grasping dataset with contact annotation and articulated Gaussian hand model for the benchmark.
 </div>
