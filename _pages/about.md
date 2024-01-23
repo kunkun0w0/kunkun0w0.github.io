@@ -90,13 +90,15 @@ Fang Zhao, <b><u>Zekun Li</u></b>, Shaoli Huang, Junwu Weng, Tianfei Zhou, Guose
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
+# 💬 Professional Service
+- *Conference Reviewer*: CVPR 2024
+- *Google explore CSR*: Ph.D. mentor 2024
+
+
 # 📖 Educations
 - *2023.09 - 2028.06 (expected)*, <b>Ph.D. in Computer Science</b>, [Brown University](https://www.brown.edu/).
 - *2019.09 - 2023.06*, <b>B. Eng. Degree in Computer Science</b>, University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)).
 
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Internships
 - *2022.10 - 2023.6*, Research Intern, [Tencent AI Lab](https://ai.tencent.com/ailab/en/index), working on garment animation and generation, supervied by [Prof. Fang Zhao](https://zhaofang0627.github.io/).
