@@ -32,19 +32,6 @@ I am looking for research internship for 24 Summer, here is my [CV](images/CV_Ze
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/MANUS.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**MANUS: Markerless Grasp Capture using Articulated 3D Gaussians**
-
-Chandradeep Pokhariya, Ishaan Nikhil Shah, Angela Xing, <b><u>Zekun Li</u></b>, Kefan Chen, Avinash Sharma, Srinath Sridhar
-<br>
-[[paper]](https://arxiv.org/abs/2312.02137)    [[project]](https://ivl.cs.brown.edu/research/manus.html)
-
-**TL;DR:** provide a new multi-view grasping dataset with contact annotation and articulated Gaussian hand model for the benchmark.
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/SurfD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -55,6 +42,20 @@ Zhengming Yu, Zhiyang Dou, Xiaoxiao Long, Cheng Lin, <b><u>Zekun Li</u></b>, Yua
 [[paper]](https://arxiv.org/abs/2311.17050)    [[project]](https://yzmblog.github.io/projects/SurfD/)
 
 **TL;DR:** design a novel UDF-based latent diffusion model for shape generation.
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR2024</div><img src='images/MANUS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**MANUS: Markerless Grasp Capture using Articulated 3D Gaussians**
+
+Chandradeep Pokhariya, Ishaan Nikhil Shah, Angela Xing, <b><u>Zekun Li</u></b>, Kefan Chen, Avinash Sharma, Srinath Sridhar
+<br>
+[[paper]](https://arxiv.org/abs/2312.02137)    [[project]](https://ivl.cs.brown.edu/research/manus.html)
+
+**TL;DR:** provide a new multi-view grasping dataset with contact annotation and articulated Gaussian hand model for the benchmark.
 </div>
 </div>
 
