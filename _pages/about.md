@@ -18,14 +18,14 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 Hi! My name is Zekun Li (李泽坤). I am a first-year Ph.D. student in Computer Science at [Brown University](https://www.brown.edu/), working with [Prof. Srinath Sridhar](https://cs.brown.edu/people/ssrinath/index.html) at [Interactive 3D Vision & Learning Lab](https://ivl.cs.brown.edu/).
-Before studying at Brown, I received my B. Eng. degree with honors in Computer Science at the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)). My undergraduate research advisor is [Prof. Zhao Kang](https://zhaokang.site/). Previously, I have enriched my research experience as an intern at [Tencent AI Lab](https://ai.tencent.com/ailab/en/index).
+
 Before studying at Brown, I received my B. Eng. degree with honors in Computer Science at the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)). My undergraduate research advisor is [Prof. Zhao Kang](https://zhaokang.site/). Previously, I have enriched my research experience as an intern at [Tencent AI Lab](https://ai.tencent.com/ailab/en/index). In this summer, I will join [Honda Research Institute](https://usa.honda-ri.com/) as a research intern.
 
 My research interest focuses on Generative Models and Computer Graphics. I am keen on combining knowledge-based principles and learning-based networks to achieve robust, responsible, controllable, and creative models for visual content generation.
 Recently, I mainly focused on character animation and human-X interaction.
 
 <!-- I am looking for research internship for 24 Summer, here is my [CV](images/CV_ZekunLi.pdf). Please freely contact me without any hesitation! (○'◡'○)ﾉ  -->
-I'm always open to collaboration; please feel free to email me!
+I'm always open to collaboration; Please freely contact me without any hesitation! (○'◡'○)ﾉ
 
 
 <!-- # 🔥 News
