@@ -25,7 +25,7 @@ My research interest focuses on Generative Models and Computer Graphics. I am ke
 Recently, I mainly focused on character animation and human-X interaction.
 
 <!-- I am looking for research internship for 24 Summer, here is my [CV](images/CV_ZekunLi.pdf). Please freely contact me without any hesitation! (○'◡'○)ﾉ  -->
-I'm always open to collaboration; Please freely contact me without any hesitation! (○'◡'○)ﾉ
+I'm always open to collaboration; If you want to work with me, please freely contact me without any hesitation! (○'◡'○)ﾉ
 
 
 <!-- # 🔥 News
