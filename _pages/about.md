@@ -34,7 +34,7 @@ I'm always open to collaboration; If you want to work with me, please freely con
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/SurfD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV2024</div><img src='images/SurfD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Surf-D: High-Quality Surface Generation for Arbitrary Topologies using Diffusion Models**
