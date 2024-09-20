@@ -17,15 +17,15 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! My name is Zekun Li (李泽坤). I am a first-year Ph.D. student in Computer Science at [Brown University](https://www.brown.edu/), working with [Prof. Srinath Sridhar](https://cs.brown.edu/people/ssrinath/index.html) at [Interactive 3D Vision & Learning Lab](https://ivl.cs.brown.edu/).
+Hi! My name is Zekun Li (李泽坤). I am a second-year Ph.D. student in Computer Science at [Brown University](https://www.brown.edu/), working with [Prof. Srinath Sridhar](https://cs.brown.edu/people/ssrinath/index.html) at [Interactive 3D Vision & Learning Lab](https://ivl.cs.brown.edu/).
 
-Before studying at Brown, I received my B. Eng. degree with honors in Computer Science at the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)). My undergraduate research advisor is [Prof. Zhao Kang](https://zhaokang.site/). Previously, I have enriched my research experience as an intern at [Tencent AI Lab](https://ai.tencent.com/ailab/en/index). In this summer, I will join [Honda Research Institute](https://usa.honda-ri.com/) as a research intern.
+Before studying at Brown, I received my B. Eng. degree with honors in Computer Science at the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)). My undergraduate research advisor is [Prof. Zhao Kang](https://zhaokang.site/). Previously, I have enriched my research experience as an intern at [Tencent AI Lab](https://ai.tencent.com/ailab/en/index) and [Honda Research Institute](https://usa.honda-ri.com/).
 
 My research interest focuses on Generative Models and Computer Graphics. I am keen on combining knowledge-based principles and learning-based networks to achieve robust, responsible, controllable, and creative models for visual content generation.
 Recently, I mainly focused on character animation and human-X interaction.
 
 <!-- I am looking for research internship for 24 Summer, here is my [CV](images/CV_ZekunLi.pdf). Please freely contact me without any hesitation! (○'◡'○)ﾉ  -->
-I'm always open to collaboration; If you want to work with me, please freely contact me without any hesitation! (○'◡'○)ﾉ
+I'm always open to collaboration. If you want to work with me, please contact me without hesitation! (○'◡'○)ﾉ
 
 
 <!-- # 🔥 News
@@ -43,7 +43,7 @@ Zhengming Yu, Zhiyang Dou, Xiaoxiao Long, Cheng Lin, <b><u>Zekun Li</u></b>, Yua
 <br>
 [[paper]](https://arxiv.org/abs/2311.17050)    [[project]](https://yzmblog.github.io/projects/SurfD/)
 
-**TL;DR:** design a novel UDF-based latent diffusion model for shape generation.
+**TL;DR:** Design a novel UDF-based latent diffusion model for shape generation.
 </div>
 </div>
 
@@ -57,7 +57,7 @@ Chandradeep Pokhariya, Ishaan Nikhil Shah, Angela Xing, <b><u>Zekun Li</u></b>, 
 <br>
 [[paper]](https://arxiv.org/abs/2312.02137)    [[project]](https://ivl.cs.brown.edu/research/manus.html)
 
-**TL;DR:** provide a new multi-view grasping dataset with contact annotation and articulated Gaussian hand model for the benchmark.
+**TL;DR:** Provide a new multi-view grasping dataset with contact annotation and articulated Gaussian hand model for the benchmark.
 </div>
 </div>
 
@@ -71,7 +71,7 @@ Fang Zhao, <b><u>Zekun Li</u></b>, Shaoli Huang, Junwu Weng, Tianfei Zhou, Guose
 <br>
 [[paper]](https://arxiv.org/abs/2304.00761)    [[project]](https://semanticdh.github.io/AnchorDEF/)
 
-**TL;DR:** design adaptive anchors to predict 3D garment animation from a body motion sequence, especially for loose-fitting garments.
+**TL;DR:** Design adaptive anchors to predict 3D garment animation from a body motion sequence, especially for loose-fitting garments.
 </div>
 </div>
 
@@ -85,7 +85,7 @@ Fang Zhao, <b><u>Zekun Li</u></b>, Shaoli Huang, Junwu Weng, Tianfei Zhou, Guose
 <br>
 [[paper]](https://arxiv.org/abs/2207.06095)    [[code]](https://github.com/kunkun0w0/SGA)
 
-**TL;DR:** design a novel BP scheme to solve the gradient issue in Attention.
+**TL;DR:** Design a novel BP scheme to solve the gradient issue in Attention.
 </div>
 </div>
 
@@ -94,7 +94,7 @@ Fang Zhao, <b><u>Zekun Li</u></b>, Shaoli Huang, Junwu Weng, Tianfei Zhou, Guose
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # 💬 Professional Service
-- *Conference Reviewer*: CVPR 2024, SIGGRAPH 2024
+- *Conference Reviewer*: CVPR 2024, SIGGRAPH 2024, ECCV2024, AAAI 2025, ICLR 2025
 - *Google explore CSR*: Ph.D. mentor 2024
 
 
@@ -104,5 +104,6 @@ Fang Zhao, <b><u>Zekun Li</u></b>, Shaoli Huang, Junwu Weng, Tianfei Zhou, Guose
 
 
 # 💻 Internships
+- *2024.6 - 2024.8*, Research Intern, [Honda Research Institute](https://usa.honda-ri.com/), working on human-object-interaction tracking with [Enna Sachdeva](https://ennasachdeva.github.io/).
 - *2022.10 - 2023.6*, Research Intern, [Tencent AI Lab](https://ai.tencent.com/ailab/en/index), working on garment animation and generation, supervied by [Prof. Fang Zhao](https://zhaofang0627.github.io/).
 - *2020.09 - 2022.09*, Research Intern, Cognitive Computing and Intelligent Decision Lab at [UESTC](https://www.uestc.edu.cn/), working on image translation, supervied by [Prof. Zhao Kang](https://zhaokang.site/).
