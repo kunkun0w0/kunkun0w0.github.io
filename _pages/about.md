@@ -22,7 +22,7 @@ Hi! My name is Zekun Li (李泽坤). I am a second-year Ph.D. student in Compute
 Before studying at Brown, I received my B. Eng. degree with honors in Computer Science at the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)). My undergraduate research advisor is [Prof. Zhao Kang](https://zhaokang.site/). Previously, I have enriched my research experience as an intern at [Tencent AI Lab](https://ai.tencent.com/ailab/en/index) and [Honda Research Institute](https://usa.honda-ri.com/).
 
 My research interest focuses on Generative Models and Computer Graphics. I am keen on combining knowledge-based principles and learning-based networks to achieve robust, responsible, controllable, and creative models for visual content generation.
-Recently, I mainly focused on character animation and human-X interaction.
+Recently, I mainly focused on vision content customization and human-X interaction.
 
 <!-- I am looking for research internship for 24 Summer, here is my [CV](images/CV_ZekunLi.pdf). Please freely contact me without any hesitation! (○'◡'○)ﾉ  -->
 I'm always open to collaboration. If you want to work with me, please contact me without hesitation! (○'◡'○)ﾉ
