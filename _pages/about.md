@@ -34,7 +34,7 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI4CC2025</div><img src='images/SurfD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI4CC2025</div><img src='images/Art3D.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Art3D: Training-Free 3D Generation from Flat-Colored Illustration**
