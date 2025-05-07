@@ -34,6 +34,20 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI4CC2025</div><img src='images/SurfD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Art3D: Training-Free 3D Generation from Flat-Colored Illustration**
+
+Xiaoyan Cong, Jiayi Shen, <b><u>Zekun Li</u></b>, Rao Fu, Tao Lu, Srinath Sridhar
+<br>
+[[paper]](https://arxiv.org/abs/2504.10466)    [[project]](https://joy-jy11.github.io/)
+
+**TL;DR:** Propose a training-free solution for reconstructing geometry from flat-colored images.
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV2024</div><img src='images/SurfD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -93,9 +107,9 @@ Fang Zhao, <b><u>Zekun Li</u></b>, Shaoli Huang, Junwu Weng, Tianfei Zhou, Guose
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
-# 💬 Professional Service
+<!-- # 💬 Professional Service
 - *Conference Reviewer*: CVPR 2024, SIGGRAPH 2024, ECCV2024, AAAI 2025, ICLR 2025
-- *Google explore CSR*: Ph.D. mentor 2024
+- *Google explore CSR*: Ph.D. mentor 2024 -->
 
 
 # 📖 Educations
@@ -104,6 +118,7 @@ Fang Zhao, <b><u>Zekun Li</u></b>, Shaoli Huang, Junwu Weng, Tianfei Zhou, Guose
 
 
 # 💻 Internships
+- *2025.5 - 2024.8*, Research Intern, [Meta](https://www.meta.com/about/company-info/), working on human motion estimation from ego-headsets with [Abhay Mittal](https://scholar.google.com/citations?user=BwE_L4MAAAAJ&hl=en).
 - *2024.6 - 2024.8*, Research Intern, [Honda Research Institute](https://usa.honda-ri.com/), working on human-object-interaction tracking with [Enna Sachdeva](https://ennasachdeva.github.io/).
 - *2022.10 - 2023.6*, Research Intern, [Tencent AI Lab](https://ai.tencent.com/ailab/en/index), working on garment animation and generation, supervied by [Prof. Fang Zhao](https://zhaofang0627.github.io/).
 - *2020.09 - 2022.09*, Research Intern, Cognitive Computing and Intelligent Decision Lab at [UESTC](https://www.uestc.edu.cn/), working on image translation, supervied by [Prof. Zhao Kang](https://zhaokang.site/).
