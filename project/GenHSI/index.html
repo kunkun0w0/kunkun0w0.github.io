@@ -3,14 +3,14 @@
 <html lang="en">
 
 <head>
-  <meta content="DyTact: Capturing Dynamic Contacts in Hand-Object Manipulation" name="title" />
+  <meta content="GenHSI: Controllable Generation of Human-Scene Interaction Videos" name="title" />
   <meta content="" name="description" />
   <meta content="" name="keywords" />
   <meta content="index, follow" name="robots" />
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <meta content="English" name="language" />
-  <meta content="Xiaoyan Cong" name="author" />
-  <title>DyTact: Capturing Dynamic Contacts in Hand-Object Manipulation</title>
+  <meta content="Zekun Li" name="author" />
+  <title>GenHSI: Controllable Generation of Human-Scene Interaction Videos</title>
   <!-- Bootstrap -->
   <script src="js/video_comparison.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
@@ -257,38 +257,26 @@
           <div class="col-12">
             <h1 style="font-weight: bold">
               <b>
-                <span style="color: #c68b5b">DyTact</span>: Capturing
-                <span style="color: #c68b5b">Dy</span>namic
-                Con<span style="color: #c68b5b">Tact</span>s<br>
-                in Hand-Object Manipulation
+                GenHSI: Controllable Generation of Human-Scene Interaction Videos
               </b>
             </h1>
             <h4 style="color:#5a6268;">Preprint</h4>
             <hr>
             <div style="font-size: larger;">
-              <a href="https://oliver-cong02.github.io/">Xiaoyan Cong<sup>1</sup></a>
-              <a href="https://xing-angela.github.io/">Angela Xing<sup>1</sup> </a>
-              <a href="https://coreqode.github.io/" target="_blank">Chandradeep Pokhariya<sup>2</sup> </a>
-              <a href="https://freddierao.github.io/">Rao Fu<sup>1</sup> </a>
-              <a href="https://cs.brown.edu/people/ssrinath/" target="_blank">Srinath Sridhar<sup>1*</sup></a>
+              <a href="https://kunkun0w0.github.io/">Zekun Li</a>
+              <a>Rui Zhou</a>
+              <a href="https://rahulsajnani.github.io/">Rahul Sajnani</a>
+              <a href="https://oliver-cong02.github.io/">Xiaoyan Cong</a>
+              <a href="https://dritchie.github.io/">Daniel Ritchie</a>
+              <a href="https://cs.brown.edu/people/ssrinath/">Srinath Sridhar</a>
               <p>
-                <sup>1</sup>Brown University
-                <sup>2</sup>IIT Delhi
-                <br><sup>*</sup>Corresponding Author
+                Brown University
               </p>
             </div>
             <div class="row justify-content-center">
               <div class="column">
                 <p class="mb-5">
-                  <a class="btn btn-large btn-light" href="https://drive.google.com/file/d/1BAw44kO5ixlG9eG_4vNG-KLOV5j4nfla/view?usp=sharing" role="button" target="_blank">
-                    <i class="fa fa-file-pdf-o"></i>
-                    <b>Paper</b>
-                  </a>
-                </p>
-              </div>
-              <div class="column">
-                <p class="mb-5">
-                  <a class="btn btn-large btn-light" href="https://arxiv.org/abs/2506.03103" role="button" target="_blank">
+                  <a class="btn btn-large btn-light" href="https://arxiv.org/abs/2506.19840" role="button" target="_blank">
                     <i class="ai ai-arxiv"></i>
                     <b>arXiv</b>
                   </a>
@@ -296,7 +284,7 @@
               </div>
               <div class="column">
                 <p class="mb-5">
-                  <a class="btn btn-large btn-light" href="https://github.com/Oliver-Cong02/DyTact" role="button" target="_blank">
+                  <a class="btn btn-large btn-light" href="https://github.com/kunkun0w0/GenHSI" role="button" target="_blank">
                     <i class="fa fa-github"></i>
                     <b>Code</b>
                   </a>
@@ -315,18 +303,18 @@
         <div class="col-12">
           <h3>Abstract</h3>
           <hr style="margin-top: 0px" />
-          <p style="text-align:center;"> 
+          <p style="text-align:center;">
             <img src="img/teaser.png" width="90%"/>
           </p>
           <p class="text-left">
-            Reconstructing dynamic hand-object contacts is essential for realistic manipulation in AI character animation, XR, and robotics, yet it remains challenging due to heavy occlusions, complex surface details, and limitations in existing capture techniques. In this paper, we introduce <strong><span style="color: #c68b5b">DyTact</span></strong>, a markerless capture method for accurately capturing dynamic contact in hand–object manipulations in a non-intrusive manner. Our approach leverages a dynamic, articulated representation based on 2D Gaussian surfels to model complex manipulations. By binding these surfels to MANO meshes, DyTact harnesses the inductive bias of template models to stabilize and accelerate optimization. A refinement module addresses time-dependent high-frequency deformations, while a contact-guided adaptive sampling strategy selectively increases surfel density in contact regions to handle heavy occlusion. Extensive experiments demonstrate that DyTact not only achieves state-of-the-art dynamic contact estimation accuracy but also significantly improves novel view synthesis quality, all while operating with fast optimization and efficient memory usage.
+            Large-scale pre-trained video diffusion models have exhibited remarkable capabilities in diverse video generation. However, existing solutions face several challenges in using these models to generate long movie-like videos with rich human-object interactions that include unrealistic human-scene interaction, lack of subject identity preservation, and require expensive training. We propose GenHSI, a training-free method for controllable generation of long human-scene interaction videos (HSI). Taking inspiration from movie animation, our key insight is to overcome the limitations of previous work by subdividing the long video generation task into three stages: (1) script writing, (2) pre-visualization, and (3) animation. Given an image of a scene, a user description, and multiple images of a person, we use these three stages to generate long-videos that preserve human-identity and provide rich human-scene interactions. Script writing converts complex human tasks into simple atomic tasks that are used in the pre-visualization stage to generate 3D keyframes (storyboards). These 3D keyframes are rendered and animated by off-the-shelf video diffusion models for consistent long video generation with rich contacts in a 3D-aware manner. A key advantage of our work is that we alleviate the need for scanned, accurate scenes and create 3D keyframes from single-view images. We are the first to generate a long video sequence with a consistent camera pose that contains arbitrary numbers of character actions without training. Experiments demonstrate that our method can generate long videos that effectively preserve scene content and character identity with plausible human-scene interaction from a single image scene.
           </p>
         </div>
       </div>
     </div>
   </section>
   <!-- TLDR -->
-  <section>
+  <!-- <section>
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -335,12 +323,12 @@
           <p class="text-left">
             (1) We introduce <strong><span style="color: #c68b5b">DyTact</span></strong>, a method for accurate <strong><span style="color: #c68b5b">Dy</span></strong>namic con<strong><span style="color: #c68b5b">Tact</span></strong> capture in complex hand-object manipulation.<br>
             (2) <strong><span style="color: #c68b5b">DyTact</span></strong> reconstructs <strong>both the hand and the object</strong> with dynamic 2D Gaussian surfels, enabling high-fidelity surface modeling without misalignments. We propose a contact-guided adaptive density control strategy to effectively address self-occlusions and object occlusions, as well as a time-dependent refinement module that precisely captures complex surface deformations for accurate contact estimation and dynamic reconstruction.<br>
-            (3) Experimental results demonstrate the superior performance of DyTact in accurate dynamic contact estimation and high-fidelity novel view synthesis, coupled with fast optimization and efficient memory usage. 
+            (3) Experimental results demonstrate the superior performance of DyTact in accurate dynamic contact estimation and high-fidelity novel view synthesis, coupled with fast optimization and efficient memory usage.
           </p>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- pipeline -->
   <section>
     <div class="container">
@@ -348,7 +336,7 @@
         <div class="col-12">
           <h3>Method Overview</h3>
           <hr style="margin-top: 0px" />
-          <p style="text-align:center;"> 
+          <p style="text-align:center;">
             <img src="img/pipeline.png" width="90%"/>
           </p>
           <p>
@@ -369,9 +357,10 @@
             <h3>Supplementary Video</h3>
             <hr style="margin-top: 0px" />
             <p style="text-align:center;">
-            <video width="90%" controls="controls">
+            <!-- <video width="90%" controls="controls">
               <source src="video/supp_video.mp4" type="video/mp4">
-            </video>
+            </video> -->
+            Coming soon ...
           </p>
           </div>
         </div>
@@ -385,7 +374,7 @@
             <h3>More Results</h3>
             <hr style="margin-top: 0px" />
             <p>
-              Coming soon...
+              Coming soon ...
             </p>
           </div>
         </div>
@@ -401,15 +390,9 @@
         <h3>Citation</h3>
         <hr style="margin-top: 0px" />
         <pre style="background-color: #e9eeef; padding: 1.5em 1.5em; border-radius: 20px">
-<code>@misc{cong2025dytactcapturingdynamiccontacts,
-  title={DyTact: Capturing Dynamic Contacts in Hand-Object Manipulation}, 
-  author={Xiaoyan Cong and Angela Xing and Chandradeep Pokhariya and Rao Fu and Srinath Sridhar},
-  year={2025},
-  eprint={2506.03103},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2506.03103}, 
-}</code></pre>
+<code>
+  coming soon ...
+</code></pre>
         <hr />
       </div>
     </div>
