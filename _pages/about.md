@@ -34,6 +34,19 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV2026</div><img src='images/genhsi.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**GenHSI: Controllable Generation of Human-Scene Interaction Videos**
+
+<b><u>Zekun Li</u></b>, Rui Zhou, Rahul Sajnani, Xiaoyan Cong, Daniel Ritchie, Srinath Sridhar
+<br>
+[[paper]](https://arxiv.org/abs/2506.19840)    [[project]](https://kunkun0w0.github.io/project/GenHSI/)
+
+**TL;DR:** Propose chain-of-frame prompting for VDM to generate plausible HSI videos without training.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI4CC2025</div><img src='images/Art3D.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
