@@ -34,6 +34,19 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/genhsi.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**EgoReAct: Egocentric Video-Driven 3D Human Reaction Generation**
+
+Libo Zhang, <b><u>Zekun Li</u></b>, Tianyu Li, Zeyu Cao, Rui Xu, Xiao-Xiao Long, Wenjia Wang, Jingbo Wang, Yuan Liu, Wenping Wang, Daquan Zhou, Taku Komura, Zhiyang Dou
+<br>
+[[paper]](https://arxiv.org/abs/2512.22808)    [[project]](https://frank-zy-dou.github.io/projects/EgoReAct/index.html)
+
+**TL;DR:** Propose a real-time ego-perception driven human reaction generation model and a motion dataset with spatially aligned ego-video.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV2026</div><img src='images/genhsi.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
