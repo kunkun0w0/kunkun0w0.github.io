@@ -34,7 +34,7 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/genhsi.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/egoreact.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **EgoReAct: Egocentric Video-Driven 3D Human Reaction Generation**
