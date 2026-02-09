@@ -34,6 +34,32 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/videoGPA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation**
+
+Hongyang Du*, Junjie Ye*, Xiaoyan Cong*, Runhao Li, Jingcheng Ni, Aman Agarwal, Zeqi Zhou, <b><u>Zekun Li</u></b>, Randall Balestriero, Yue Wang
+<br>
+[[paper]](https://arxiv.org/abs/2601.23286)    [[project]](https://hongyang-du.github.io/VideoGPA-Website/)
+
+**TL;DR:** Propose a video diffusion model post training solution to enhance 3D consistent.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/llamo.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**LLaMo: Scaling Pretrained Language Models for Unified Motion Understanding and Generation with Continuous Autoregressive Tokens**
+
+<b><u>Zekun Li</u></b>, Sizhe An, Chengcheng Tang, chuan guo, Ivan Shugurov, Linguang Zhang, Amy Zhao, Srinath Sridhar, Lingling Tao, Abhay Mittal
+<br>
+[[paper]]()    [[project]]()
+
+**TL;DR:** Propose a generic framework to extend pretrained LLMs for human motion generation and understanding, while preserving the original text-only performance via a modality-specific Mixture-of-Transformers (MoT).
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/egoreact.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
