@@ -34,7 +34,7 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/videoGPA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image' style="padding: 0 3em;"><div><div class="badge">In Submission</div><img src='images/videoGPA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation**
@@ -52,7 +52,7 @@ Hongyang Du*, Junjie Ye*, Xiaoyan Cong*, Runhao Li, Jingcheng Ni, Aman Agarwal, 
 
 **LLaMo: Scaling Pretrained Language Models for Unified Motion Understanding and Generation with Continuous Autoregressive Tokens**
 
-<b><u>Zekun Li</u></b>, Sizhe An, Chengcheng Tang, chuan guo, Ivan Shugurov, Linguang Zhang, Amy Zhao, Srinath Sridhar, Lingling Tao, Abhay Mittal
+<b><u>Zekun Li</u></b>, Sizhe An, Chengcheng Tang, Chuan Guo, Ivan Shugurov, Linguang Zhang, Amy Zhao, Srinath Sridhar, Lingling Tao, Abhay Mittal
 <br>
 [[paper]]()    [[project]]()
 
