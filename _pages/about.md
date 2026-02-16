@@ -54,7 +54,7 @@ Hongyang Du*, Junjie Ye*, Xiaoyan Cong*, Runhao Li, Jingcheng Ni, Aman Agarwal, 
 
 <b><u>Zekun Li</u></b>, Sizhe An, Chengcheng Tang, Chuan Guo, Ivan Shugurov, Linguang Zhang, Amy Zhao, Srinath Sridhar, Lingling Tao, Abhay Mittal
 <br>
-[[paper]]()    [[project]]()
+[[paper]](https://arxiv.org/abs/2602.12370)    [[project]]()
 
 **TL;DR:** Propose a generic framework to extend pretrained LLMs for human motion generation and understanding, while preserving the original text-only performance via a modality-specific Mixture-of-Transformers (MoT).
 </div>
