@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta content="LLaMo: Scaling Pretrained Language Models for Unified Motion Understanding and Generation with Continuous Autoregressive Tokens" name="title" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Zekun Li" name="author" />
+  <title>LLaMo: Unified Motion Understanding and Generation</title>
+
+  <!-- Bootstrap 4 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Jost', sans-serif;
+      color: #333;
+    }
+
+    /* ---------- HEADER ---------- */
+    .jumbotron {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      padding: 3rem 1rem 2rem;
+      margin-bottom: 0;
+    }
+
+    .paper-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+    }
+
+    .venue-badge {
+      display: inline-block;
+      background: #0984e3;
+      color: #fff;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+    }
+
+    .author-list {
+      font-size: 1.05rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .author-list a {
+      color: #0984e3;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    .author-list a:hover { text-decoration: underline; }
+
+    .affil {
+      color: #6c757d;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-paper {
+      margin: 4px 6px;
+      border-radius: 30px;
+      padding: 8px 22px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section {
+      padding: 2.5rem 0 1.5rem;
+    }
+
+    h3 {
+      font-weight: 700;
+      padding-top: 10px;
+    }
+
+    hr { margin-top: 0.5rem; }
+
+    .teaser-img {
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .abstract-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* ---------- VIDEO COMPARISONS ---------- */
+    .prompt-box {
+      background: #eef2f5;
+      border: 1px solid #dde3e8;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #000;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      text-align: center;
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #000;
+      aspect-ratio: 16 / 9;
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .video-wrapper:hover video {
+      transform: scale(1.03);
+      filter: brightness(1.08);
+    }
+
+    .video-wrapper::after {
+      content: "▶";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      font-size: 1.8rem;
+      color: rgba(255,255,255,0.9);
+      pointer-events: none;
+      transition: transform 0.2s;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    .video-wrapper:hover::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .video-label {
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 0.82rem;
+    }
+
+    .label-ours { color: #0984e3; }
+    .label-baseline { color: #e17055; }
+
+    .comp-block {
+      margin-bottom: 2rem;
+    }
+
+    /* ---------- MULTILINGUAL ---------- */
+    .lang-title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .multi-prompt-box {
+      background: #eef2f5;
+      border: 1px solid #dde3e8;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      color: #222;
+    }
+
+    /* ---------- CITATION ---------- */
+    .citation-block {
+      background: #e9eeef;
+      padding: 1.5em;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-family: 'Courier New', monospace;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    /* ---------- MODAL ---------- */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.65);
+      backdrop-filter: blur(8px);
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-overlay.active { opacity: 1; }
+
+    .modal-window {
+      position: relative;
+      background: #000;
+      width: 92%;
+      max-width: 1100px;
+      border-radius: 12px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.6);
+      overflow: hidden;
+      transform: scale(0.95);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .modal-overlay.active .modal-window { transform: scale(1); }
+
+    .modal-video { width: 100%; display: block; outline: none; }
+
+    .modal-bar {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #333;
+    }
+
+    .modal-prompt {
+      font-family: 'Courier New', monospace;
+      font-size: 0.88rem;
+      color: #ddd;
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-width: 90%;
+    }
+
+    .modal-close-btn {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0 8px;
+      line-height: 1;
+      transition: color 0.2s;
+    }
+
+    .modal-close-btn:hover { color: #ff5f57; }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      margin-top: 2rem;
+      padding: 1.5rem 0 1rem;
+      font-size: 0.88rem;
+      color: #888;
+      border-top: 1px solid #e9ecef;
+    }
+
+    footer a { color: #0984e3; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 576px) {
+      .paper-title { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="paper-title">
+              LLaMo: Scaling Pretrained Language Models for Unified Motion Understanding and Generation with Continuous Autoregressive Tokens
+            </h2>
+            <div class="venue-badge">CVPR 2026</div>
+            <hr>
+            <div class="author-list">
+              <a href="https://kunkun0w0.github.io/">Zekun Li</a><sup>1</sup>
+              <a href="https://sizhean.github.io/">Sizhe An</a><sup>2</sup>
+              <a href="https://www.linkedin.com/in/chengcheng-tang/">Chengcheng Tang</a><sup>2</sup>
+              <a href="https://ericguo5513.github.io/">Chuan Guo</a><sup>2</sup>
+              <a href="https://scholar.google.com/citations?user=7VlHGEgAAAAJ">Ivan Shugurov</a><sup>2</sup>
+              <a href="https://scholar.google.com/citations?user=C7DtSzYAAAAJ">Linguang Zhang</a><sup>2</sup><br>
+              <a href="https://scholar.google.com/citations?user=GzX462kAAAAJ">Amy Zhao</a><sup>2</sup>
+              <a href="https://cs.brown.edu/people/ssrinath/">Srinath Sridhar</a><sup>1</sup>
+              <a href="https://scholar.google.com/citations?user=0GDQMkIAAAAJ">Lingling Tao</a><sup>2</sup>
+              <a href="https://scholar.google.com/citations?user=BwE_L4MAAAAJ">Abhay Mittal</a><sup>2</sup>
+            </div>
+            <div class="affil">
+              <sup>1</sup>Brown University &nbsp;&nbsp; <sup>2</sup>Meta
+            </div>
+            <div>
+              <a class="btn btn-light btn-paper" href="https://arxiv.org/abs/2602.12370" role="button" target="_blank">
+                <i class="ai ai-arxiv"></i> &nbsp;<b>arXiv</b>
+              </a>
+              <a class="btn btn-light btn-paper" href="#" role="button" target="_blank">
+                <i class="fa fa-github"></i> &nbsp;<b>Code</b> <small>(coming soon)</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABSTRACT ===================== -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3>Abstract</h3>
+          <hr>
+          <p style="text-align:center; margin-bottom: 1.5rem;">
+            <img src="method.png" width="90%" class="teaser-img" alt="LLaMo teaser" />
+          </p>
+          <p class="abstract-text">
+            Recent progress in large models has led to significant advances in unified multimodal generation and understanding. However, the development of models that unify motion-language generation and understanding remains largely underexplored. Existing approaches often fine-tune large language models (LLMs) on paired motion-text data, which can result in catastrophic forgetting of linguistic capabilities due to the limited scale of available text-motion pairs. Furthermore, prior methods typically convert motion into discrete representations via quantization to integrate with language models, introducing substantial jitter artifacts from discrete tokenization.
+          </p>
+          <p class="abstract-text">
+            To address these challenges, we propose <strong>LLaMo</strong>, a unified framework that extends pretrained LLMs through a modality-specific <strong>Mixture-of-Transformers (MoT)</strong> architecture. This design inherently preserves the language understanding of the base model while enabling scalable multimodal adaptation. We encode human motion into a causal continuous latent space and maintain the next-token prediction paradigm in the decoder-only backbone through a lightweight flow-matching head, allowing for streaming motion generation in real-time (&gt;30 FPS). Leveraging the comprehensive language understanding of pretrained LLMs and large-scale motion-text pretraining, our experiments demonstrate that <strong>LLaMo</strong> achieves high-fidelity text-to-motion generation and motion-to-text captioning in general settings, especially zero-shot motion generation, marking a significant step towards a general unified motion-language large model.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VIDEO COMPARISONS ===================== -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3>Zero-shot Text-to-Motion Comparisons</h3>
+          <hr>
+          <p class="text-center text-muted" style="font-size:0.9rem; margin-bottom: 2rem;">
+            Videos load as you scroll. Click any video to open the fullscreen player.
+          </p>
+        </div>
+      </div>
+
+      <!-- Row 1 -->
+      <div class="row comp-block">
+        <div class="col-md-6">
+          <div class="prompt-box">"A strong athlete is lifting heavy weights in the gym."</div>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="LLaMo-8B Result">
+                    <source data-src="videos/ours_sample_01.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-ours">LLaMo-8B (Ours)</div>
+              </div>
+            </div>
+            <div class="col-6 pl-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="MotionMillion-7B Result">
+                    <source data-src="videos/baseline_sample_01.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-baseline">MotionMillion-7B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="prompt-box">"A zombie slowly dragging its feet forward, arms outstretched, letting out a low groan."</div>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="LLaMo-8B Result">
+                    <source data-src="videos/ours_sample_02.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-ours">LLaMo-8B (Ours)</div>
+              </div>
+            </div>
+            <div class="col-6 pl-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="MotionMillion-7B Result">
+                    <source data-src="videos/baseline_sample_02.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-baseline">MotionMillion-7B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row comp-block">
+        <div class="col-md-6">
+          <div class="prompt-box">"Raise both hands."</div>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="LLaMo-8B Result">
+                    <source data-src="videos/ours_sample_03.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-ours">LLaMo-8B (Ours)</div>
+              </div>
+            </div>
+            <div class="col-6 pl-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="MotionMillion-7B Result">
+                    <source data-src="videos/baseline_sample_03.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-baseline">MotionMillion-7B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="prompt-box">"Cross arms."</div>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="LLaMo-8B Result">
+                    <source data-src="videos/ours_sample_04.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-ours">LLaMo-8B (Ours)</div>
+              </div>
+            </div>
+            <div class="col-6 pl-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="MotionMillion-7B Result">
+                    <source data-src="videos/baseline_sample_04.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-baseline">MotionMillion-7B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="row comp-block">
+        <div class="col-md-6">
+          <div class="prompt-box">"A middle-aged couple greeting each other warmly after a long day, wrapping their arms around each other in a tight hug."</div>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="LLaMo-8B Result">
+                    <source data-src="videos/ours_sample_05.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-ours">LLaMo-8B (Ours)</div>
+              </div>
+            </div>
+            <div class="col-6 pl-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="MotionMillion-7B Result">
+                    <source data-src="videos/baseline_sample_05.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-baseline">MotionMillion-7B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="prompt-box">"The emaciated woman sat on the floor, her hands wrapped around her knees as she trembled, her head buried in her arms, sobbing, her body curled up."</div>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="LLaMo-8B Result">
+                    <source data-src="videos/ours_sample_06.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-ours">LLaMo-8B (Ours)</div>
+              </div>
+            </div>
+            <div class="col-6 pl-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="MotionMillion-7B Result">
+                    <source data-src="videos/baseline_sample_06.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-baseline">MotionMillion-7B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="row comp-block">
+        <div class="col-md-6">
+          <div class="prompt-box">"A surfer is riding a big wave."</div>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="LLaMo-8B Result">
+                    <source data-src="videos/ours_sample_07.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-ours">LLaMo-8B (Ours)</div>
+              </div>
+            </div>
+            <div class="col-6 pl-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="MotionMillion-7B Result">
+                    <source data-src="videos/baseline_sample_07.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-baseline">MotionMillion-7B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="prompt-box">"A hunter is stalking prey in the forest."</div>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="LLaMo-8B Result">
+                    <source data-src="videos/ours_sample_08.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-ours">LLaMo-8B (Ours)</div>
+              </div>
+            </div>
+            <div class="col-6 pl-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="MotionMillion-7B Result">
+                    <source data-src="videos/baseline_sample_08.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-baseline">MotionMillion-7B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 5 -->
+      <div class="row comp-block">
+        <div class="col-md-6">
+          <div class="prompt-box">"A confident performer in a flashy costume strikes a dramatic pose, then leaps into a high-flying cartwheel across the stage."</div>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="LLaMo-8B Result">
+                    <source data-src="videos/ours_sample_09.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-ours">LLaMo-8B (Ours)</div>
+              </div>
+            </div>
+            <div class="col-6 pl-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="MotionMillion-7B Result">
+                    <source data-src="videos/baseline_sample_09.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-baseline">MotionMillion-7B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="prompt-box">"A woman practicing yoga, gracefully transitioning from a downward dog position to a cobra pose."</div>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="LLaMo-8B Result">
+                    <source data-src="videos/ours_sample_10.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-ours">LLaMo-8B (Ours)</div>
+              </div>
+            </div>
+            <div class="col-6 pl-1">
+              <div class="video-item">
+                <div class="video-wrapper">
+                  <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="MotionMillion-7B Result">
+                    <source data-src="videos/baseline_sample_10.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-label label-baseline">MotionMillion-7B</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </section>
+
+  <!-- ===================== MULTILINGUAL ===================== -->
+  <section style="background: #f8f9fa; padding: 2.5rem 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3>Multilingual Generation</h3>
+          <hr>
+          <p class="text-muted" style="font-size:0.93rem;">
+            LLaMo inherits the multilingual capability of pretrained LLMs, enabling motion generation directly from non-English prompts without any multilingual training.
+          </p>
+        </div>
+      </div>
+
+      <!-- Multilingual sample 1 -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="multi-prompt-box">
+            <b>EN:</b> "An obese middle-aged male security guard, walking and looking around."<br>
+            <b>中:</b> 一个肥胖的中年男保安，边走边环顾四周。<br>
+            <b>हि:</b> एक मोटा मध्यम आयु का पुरुष सुरक्षा गार्ड, चलते हुए चारों ओर देख रहा है।
+          </div>
+          <div class="row no-gutters">
+            <div class="col-4 pr-1">
+              <div class="lang-title">English</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="English Prompt Result">
+                  <source data-src="videos/new_lang/0/en.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="col-4 px-1">
+              <div class="lang-title">Chinese (中文)</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="Chinese Input: 一个肥胖的中年男保安，边走边环顾四周。">
+                  <source data-src="videos/new_lang/0/cn.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="col-4 pl-1">
+              <div class="lang-title">Hindi (हिन्दी)</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="Hindi Input: एक मोटा मध्यम आयु का पुरुष सुरक्षा गार्ड, चलते हुए चारों ओर देख रहा है।">
+                  <source data-src="videos/new_lang/0/hindi.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multilingual sample 2 -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="multi-prompt-box">
+            <b>EN:</b> "A man of average build who looked lost was walking along the street when a giant pie suddenly hit his head. He clutched his head with both hands and squatted down."<br>
+            <b>中:</b> 一个身材中等、看起来迷茫的男人正沿着街道行走，突然一个巨大的馅饼砸中了他的头部。他双手抱头，蹲了下来。<br>
+            <b>हि:</b> एक साधारण कद-काठी वाला आदमी, खोया हुआ सड़क पर चल रहा था जब अचानक एक विशाल पाई उसके सिर पर जा लगी।
+          </div>
+          <div class="row no-gutters">
+            <div class="col-4 pr-1">
+              <div class="lang-title">English</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="English Prompt Result">
+                  <source data-src="videos/new_lang/1/en.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="col-4 px-1">
+              <div class="lang-title">Chinese (中文)</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="Chinese Input: 一个身材中等、看起来迷茫的男人正沿着街道行走，突然一个巨大的馅饼砸中了他的头部。">
+                  <source data-src="videos/new_lang/1/cn.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="col-4 pl-1">
+              <div class="lang-title">Hindi (हिन्दी)</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="Hindi Input: एक साधारण कद-काठी वाला आदमी, खोया हुआ सड़क पर चल रहा था।">
+                  <source data-src="videos/new_lang/1/hindi.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multilingual sample 3 -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="multi-prompt-box">
+            <b>EN:</b> "A strong man in deep sorrow rushed to the scene, running while reaching out and shouting with a voice filled with despair, his steps faltering."<br>
+            <b>中:</b> 一个身强力壮的男人，悲伤万分地冲向现场，一边奔跑一边伸出手臂，绝望地呼喊着，脚步踉跄。<br>
+            <b>हि:</b> एक गहरे दूख में डूबा हुआ ताकतवर आदमी अपना हाथ बढ़ा के और निराशा भरी आवाज़ से चिल्लाते हुए दौड़ के वहाँ पहुँचा।
+          </div>
+          <div class="row no-gutters">
+            <div class="col-4 pr-1">
+              <div class="lang-title">English</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="English Prompt Result">
+                  <source data-src="videos/new_lang/2/en.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="col-4 px-1">
+              <div class="lang-title">Chinese (中文)</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="Chinese Input: 一个身强力壮的男人，悲伤万分地冲向现场，绝望地呼喊着，脚步踉跄。">
+                  <source data-src="videos/new_lang/2/cn.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="col-4 pl-1">
+              <div class="lang-title">Hindi (हिन्दी)</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="Hindi Input: एक ताकतवर आदमी निराशा भरी आवाज़ से चिल्लाते हुए दौड़ के वहाँ पहुँचा।">
+                  <source data-src="videos/new_lang/2/hindi.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multilingual sample 4 -->
+      <div class="row mb-2">
+        <div class="col-12">
+          <div class="multi-prompt-box">
+            <b>EN:</b> "A professional dancer is performing a ballet solo."<br>
+            <b>中:</b> 一位专业舞蹈演员正在表演芭蕾独舞。<br>
+            <b>हि:</b> एक पेशेवर नर्तकी बैले का एकल प्रदर्शन कर रही है।
+          </div>
+          <div class="row no-gutters">
+            <div class="col-4 pr-1">
+              <div class="lang-title">English</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="English Prompt Result">
+                  <source data-src="videos/new_lang/3/en.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="col-4 px-1">
+              <div class="lang-title">Chinese (中文)</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="Chinese Input: 一位专业舞蹈演员正在表演芭蕾独舞。">
+                  <source data-src="videos/new_lang/3/cn.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="col-4 pl-1">
+              <div class="lang-title">Hindi (हिन्दी)</div>
+              <div class="video-wrapper">
+                <video loop muted playsinline preload="none" class="lazy trigger-modal" data-prompt="Hindi Input: एक पेशेवर नर्तकी बैले का एकल प्रदर्शन कर रही है।">
+                  <source data-src="videos/new_lang/3/hindi.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </section>
+
+  <!-- ===================== CITATION ===================== -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3>Citation</h3>
+          <hr>
+          <pre class="citation-block">@inproceedings{li2026llamo,
+  title     = {LLaMo: Scaling Pretrained Language Models for Unified Motion
+               Understanding and Generation with Continuous Autoregressive Tokens},
+  author    = {Li, Zekun and An, Sizhe and Tang, Chengcheng and Guo, Chuan and
+               Shugurov, Ivan and Zhang, Linguang and Zhao, Amy and
+               Sridhar, Srinath and Tao, Lingling and Mittal, Abhay},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision
+               and Pattern Recognition (CVPR)},
+  year      = {2026}
+}</pre>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="text-center">
+    <div class="container">
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+    </div>
+  </footer>
+
+  <!-- ===================== MODAL ===================== -->
+  <div id="videoModal" class="modal-overlay">
+    <div class="modal-window">
+      <video id="modalVideo" class="modal-video" controls autoplay loop playsinline>
+        <source src="" type="video/mp4">
+      </video>
+      <div class="modal-bar">
+        <div id="modalText" class="modal-prompt"></div>
+        <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      // --- Lazy Loading ---
+      var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+      if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            var video = entry.target;
+            if (entry.isIntersecting) {
+              if (video.classList.contains("lazy")) {
+                video.querySelectorAll("source").forEach(function (s) {
+                  if (s.dataset.src) s.src = s.dataset.src;
+                });
+                video.load();
+                video.classList.remove("lazy");
+              }
+              var p = video.play();
+              if (p !== undefined) p.catch(function () {});
+            } else {
+              if (!video.paused) video.pause();
+            }
+          });
+        }, { rootMargin: "200px 0px 200px 0px", threshold: 0.1 });
+
+        lazyVideos.forEach(function (v) { observer.observe(v); });
+      } else {
+        lazyVideos.forEach(function (v) {
+          v.querySelectorAll("source").forEach(function (s) { s.src = s.dataset.src; });
+          v.load();
+          v.classList.remove("lazy");
+        });
+      }
+
+      // --- Modal ---
+      var modalOverlay = document.getElementById('videoModal');
+      var modalVideo   = document.getElementById('modalVideo');
+      var modalText    = document.getElementById('modalText');
+      var closeBtn     = document.getElementById('closeModalBtn');
+
+      document.querySelectorAll('.trigger-modal').forEach(function (video) {
+        video.addEventListener('click', function () {
+          var src = this.currentSrc;
+          if (!src) {
+            var s = this.querySelector('source');
+            src = s.src || s.dataset.src;
+          }
+          modalVideo.src = src;
+          modalText.textContent = (this.dataset.prompt || "Video Result").replace(/\\n/g, '\n');
+          modalOverlay.style.display = 'flex';
+          setTimeout(function () {
+            modalOverlay.classList.add('active');
+            modalVideo.play();
+          }, 10);
+        });
+      });
+
+      function closeModal() {
+        modalOverlay.classList.remove('active');
+        setTimeout(function () {
+          modalOverlay.style.display = 'none';
+          modalVideo.pause();
+          modalVideo.src = "";
+        }, 300);
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+      modalOverlay.addEventListener('click', function (e) {
+        if (e.target === modalOverlay) closeModal();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === "Escape" && modalOverlay.style.display === 'flex') closeModal();
+      });
+
+    });
+  </script>
+
+</body>
+</html>

@@ -34,7 +34,35 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image' style="padding: 0 3em;"><div><div class="badge">In Submission</div><img src='images/videoGPA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/llamo.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**LLaMo: Scaling Pretrained Language Models for Unified Motion Understanding and Generation with Continuous Autoregressive Tokens**
+
+<b><u>Zekun Li</u></b>, Sizhe An, Chengcheng Tang, Chuan Guo, Ivan Shugurov, Linguang Zhang, Amy Zhao, Srinath Sridhar, Lingling Tao, Abhay Mittal
+<br>
+[[paper]](https://arxiv.org/abs/2602.12370)    [[project]](https://kunkun0w0.github.io/project/LLaMo/)
+
+**TL;DR:** Propose a generic framework to extend pretrained LLMs for human motion generation and understanding, while preserving the original text-only performance via a modality-specific Mixture-of-Transformers (MoT).
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/PackUV.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**PackUV: Packed Gaussian UV Maps for 4D Volumetric Video**
+
+Aashish Rai, Angela Xing, Anushka agarwal, Xiaoyan Cong, <b><u>Zekun Li</u></b>, Tao Lu, Aayush Prakash, Srinath Sridhar
+<br>
+[[paper]]()    [[project]]()
+
+**TL;DR:** Propose a new volumetric video representation and the largest multi-view 4D dataset.
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/videoGPA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation**
@@ -47,18 +75,6 @@ Hongyang Du*, Junjie Ye*, Xiaoyan Cong*, Runhao Li, Jingcheng Ni, Aman Agarwal, 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/llamo.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**LLaMo: Scaling Pretrained Language Models for Unified Motion Understanding and Generation with Continuous Autoregressive Tokens**
-
-<b><u>Zekun Li</u></b>, Sizhe An, Chengcheng Tang, Chuan Guo, Ivan Shugurov, Linguang Zhang, Amy Zhao, Srinath Sridhar, Lingling Tao, Abhay Mittal
-<br>
-[[paper]](https://arxiv.org/abs/2602.12370)    [[project]]()
-
-**TL;DR:** Propose a generic framework to extend pretrained LLMs for human motion generation and understanding, while preserving the original text-only performance via a modality-specific Mixture-of-Transformers (MoT).
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/egoreact.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
