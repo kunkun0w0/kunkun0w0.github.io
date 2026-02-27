@@ -55,7 +55,7 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 Aashish Rai, Angela Xing, Anushka agarwal, Xiaoyan Cong, <b><u>Zekun Li</u></b>, Tao Lu, Aayush Prakash, Srinath Sridhar
 <br>
-[[paper]]()    [[project]]()
+[[paper]](https://arxiv.org/abs/2602.23040)    [[project]](https://ivl.cs.brown.edu/packuv/)
 
 **TL;DR:** Propose a new volumetric video representation and the largest multi-view 4D dataset.
 </div>
