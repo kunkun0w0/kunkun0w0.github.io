@@ -34,6 +34,19 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission </div><img src='images/UMO.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**UMO: Unified In-Context Learning Unlocks Motion Foundation Model Priors**
+
+Xiaoyan Cong\*, <b><u>Zekun Li\*</u></b>, Zhiyang Dou, Hongyu Li, Omid Taheri, Chuan Guo, Abhay Mittal, Sizhe An, Taku Komura, Wojciech Matusik, Michael J. Black, Srinath Sridhar
+<br>
+[[paper]]()    [[project]](https://oliver-cong02.github.io/UMO.github.io/)
+
+**TL;DR:** Propose a generic framework to express various downstream tasks under a unified training paradigm and unlock the generative prior of single-purpose text-to-motion foundation model.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/llamo.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -67,7 +80,7 @@ Aashish Rai, Angela Xing, Anushka agarwal, Xiaoyan Cong, <b><u>Zekun Li</u></b>,
 
 **VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation**
 
-Hongyang Du*, Junjie Ye*, Xiaoyan Cong*, Runhao Li, Jingcheng Ni, Aman Agarwal, Zeqi Zhou, <b><u>Zekun Li</u></b>, Randall Balestriero, Yue Wang
+Hongyang Du\*, Junjie Ye\*, Xiaoyan Cong\*, Runhao Li, Jingcheng Ni, Aman Agarwal, Zeqi Zhou, <b><u>Zekun Li</u></b>, Randall Balestriero, Yue Wang
 <br>
 [[paper]](https://arxiv.org/abs/2601.23286)    [[project]](https://hongyang-du.github.io/VideoGPA-Website/)
 
