@@ -39,7 +39,7 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 **UMO: Unified In-Context Learning Unlocks Motion Foundation Model Priors**
 
-Xiaoyan Cong\*, <b><u>Zekun Li\*</u></b>, Zhiyang Dou, Hongyu Li, Omid Taheri, Chuan Guo, Abhay Mittal, Sizhe An, Taku Komura, Wojciech Matusik, Michael J. Black, Srinath Sridhar
+Xiaoyan Cong\*, <b><u>Zekun Li*</u></b>, Zhiyang Dou, Hongyu Li, Omid Taheri, Chuan Guo, Abhay Mittal, Sizhe An, Taku Komura, Wojciech Matusik, Michael J. Black, Srinath Sridhar
 <br>
 [[paper]]()    [[project]](https://oliver-cong02.github.io/UMO.github.io/)
 
