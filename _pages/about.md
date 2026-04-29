@@ -41,9 +41,21 @@ I'm always open to collaboration. If you want to work with me, please contact me
 
 Xiaoyan Cong\*, <b><u>Zekun Li*</u></b>, Zhiyang Dou, Hongyu Li, Omid Taheri, Chuan Guo, Abhay Mittal, Sizhe An, Taku Komura, Wojciech Matusik, Michael J. Black, Srinath Sridhar
 <br>
-[[paper]]()    [[project]](https://oliver-cong02.github.io/UMO.github.io/)
+[[paper]](https://arxiv.org/abs/2603.15975)    [[project]](https://oliver-cong02.github.io/UMO.github.io/)
 
 **TL;DR:** Propose a generic framework to express various downstream tasks under a unified training paradigm and unlock the generative prior of single-purpose text-to-motion foundation model.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission </div><img src='images/IAM.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**IAM: Identity-Aware Human Motion and Shape Joint Generation**
+
+Wenqi Jia, <b><u>Zekun Li</u></b>, Abhay Mittal, Chengcheng Tang, Chuan Guo, Lezi Wang, James Matthew Rehg, Lingling Tao, Sizhe An
+[[paper]](https://arxiv.org/abs/2604.25164)    [[project]](https://vjwq.github.io/IAM/)
+
+**TL;DR:** Propose a joint motion-shape generation framework for identity-aware behavior modeling.
 </div>
 </div>
 
