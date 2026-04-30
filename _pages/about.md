@@ -87,7 +87,7 @@ Aashish Rai, Angela Xing, Anushka agarwal, Xiaoyan Cong, <b><u>Zekun Li</u></b>,
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/videoGPA.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/videoGPA.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation**
