@@ -27,6 +27,8 @@ Recently, I mainly focused on vision content customization and human-X interacti
 <!-- I am looking for research internship for 24 Summer, here is my [CV](images/CV_ZekunLi.pdf). Please freely contact me without any hesitation! (○'◡'○)ﾉ  -->
 I'm always open to collaboration. If you want to work with me, please contact me without hesitation! (○'◡'○)ﾉ
 
+🔥 I'll be at CVPR 2026 in Denver from June 2nd through June 7th, and would be happy to grab a coffee chat while we're both there!
+
 
 <!-- # 🔥 News
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
