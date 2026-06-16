@@ -17,17 +17,17 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! My name is Zekun Li (李泽坤). I am a third-year Ph.D. student in Computer Science at [Brown University](https://www.brown.edu/), working with [Prof. Srinath Sridhar](https://cs.brown.edu/people/ssrinath/index.html) at [Interactive 3D Vision & Learning Lab](https://ivl.cs.brown.edu/).
+Hi! My name is Zekun Li (李泽坤). I am a third-year Ph.D. student in Computer Science at [Brown University](https://www.brown.edu/), working with [Prof. Srinath Sridhar](https://cs.brown.edu/people/ssrinath/index.html) at [Interactive 3D Vision & Learning Lab](https://ivl.cs.brown.edu/). My research mainly focused on human-centric visual content generation and multimodal learning.
 
 Before studying at Brown, I received my B. Eng. degree with honors in Computer Science at the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)). My undergraduate research advisor is [Prof. Zhao Kang](https://zhaokang.site/). Previously, I have enriched my research experience as an intern at Meta, Honda Research Institute, and Tencent AI Lab.
 
-My research interest focuses on Generative Models and Computer Graphics. I am keen on combining knowledge-based principles and learning-based networks to achieve robust, responsible, controllable, and creative models for visual content generation.
-Recently, I mainly focused on vision content customization and human-X interaction.
+<!-- My research interest focuses on Generative Models and Computer Graphics. I am keen on combining knowledge-based principles and learning-based networks to achieve robust, responsible, controllable, and creative models for visual content generation.
+Recently, I mainly focused on human-centric visual content generation and multimodal learning. -->
 
 <!-- I am looking for research internship for 24 Summer, here is my [CV](images/CV_ZekunLi.pdf). Please freely contact me without any hesitation! (○'◡'○)ﾉ  -->
-I'm always open to collaboration. If you want to work with me, please contact me without hesitation! (○'◡'○)ﾉ
+<!-- I'm always open to collaboration. If you want to work with me, please contact me without hesitation! (○'◡'○)ﾉ -->
 
-🔥 I'll be at CVPR 2026 in Denver from June 2nd through June 7th, and would be happy to grab a coffee chat while we're both there!
+🙇 I am looking for Research Scientist Position start from 27fall! (○'◡'○)ﾉ Please reach out if you find I could be a good fit for your team!
 
 
 <!-- # 🔥 News
