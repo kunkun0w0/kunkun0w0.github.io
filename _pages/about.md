@@ -36,7 +36,7 @@ Recently, I mainly focused on human-centric visual content generation and multim
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission </div><img src='images/UMO.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV2026 </div><img src='images/UMO.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **UMO: Unified In-Context Learning Unlocks Motion Foundation Model Priors**
@@ -49,12 +49,26 @@ Xiaoyan Cong\*, <b><u>Zekun Li*</u></b>, Zhiyang Dou, Hongyu Li, Omid Taheri, Ch
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV2026 </div><img src='images/deform360.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models**
+
+Hongyu Li, Wanjia Fu, Xiaoyan Cong, <b><u>Zekun Li</u></b>, Binghao Huang, Hanxiao Jiang, Xintong He, Yiqing Liang, Rao Fu, Tao Lu, Srinath Sridhar, Kevin A. Smith, George Konidaris, Yunzhu Li
+<br>
+[[paper]](https://drive.google.com/file/d/1u1XTjRlhSTOnDB_5GaHcoo0FDZF4Kcr2/view)    [[project]]()
+
+**TL;DR:** Propose a massive multi-view visuotactile dataset, designed to provide a comprehensive benchmark for evaluating 2D and 3D world models in robotic manipulation.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission </div><img src='images/IAM.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **IAM: Identity-Aware Human Motion and Shape Joint Generation**
 
 Wenqi Jia, <b><u>Zekun Li</u></b>, Abhay Mittal, Chengcheng Tang, Chuan Guo, Lezi Wang, James Matthew Rehg, Lingling Tao, Sizhe An
+<br>
 [[paper]](https://arxiv.org/abs/2604.25164)    [[project]](https://vjwq.github.io/IAM/)
 
 **TL;DR:** Propose a joint motion-shape generation framework for identity-aware behavior modeling.
