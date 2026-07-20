@@ -66,6 +66,23 @@
         max-width: 100%;
         order: 1;
     }
+
+    .paper-box-image--badge-above {
+        > div {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .badge {
+            display: inline-block;
+            position: static;
+            margin: 0 0 .5em 0;
+        }
+
+        img {
+            display: block;
+        }
+    }
     
     @include breakpoint($medium) {
         .paper-box-image{
