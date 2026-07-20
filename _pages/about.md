@@ -41,7 +41,7 @@ Recently, I mainly focused on human-centric visual content generation and multim
 
 **Ms. Forcing: Efficient Streaming Video Generation with Multi-Scale Patchification and Attention**
 
-<b><u>Zekun Li*</u></b>, Xiaoyan Cong\*, Hongyu Li, Zhiyang Dou, Chuan Guo, Sizhe An, Abhay Mittal, Srinath Sridhar
+<b><u>Zekun Li*</u></b>, Xiaoyan Cong\*, Hongyu Li, Zhiyang Dou, Chuan Guo, Abhay Mittal, Sizhe An, Srinath Sridhar
 <br>
 [[paper]](https://drive.google.com/file/d/1HxrnA-mSZdUFoJFxhajJHxtqY2EbZZj7/view?usp=drive_link)    [[project]]()
 
