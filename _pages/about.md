@@ -36,6 +36,18 @@ Recently, I mainly focused on human-centric visual content generation and multim
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In Submission</div><img src='images/MsForcing.png' alt="Ms. Forcing teaser" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Ms. Forcing: Efficient Streaming Video Generation with Multi-Scale Patchification and Attention**
+
+<b><u>Zekun Li*</u></b>, Xiaoyan Cong\*, Hongyu Li, Zhiyang Dou, Chuan Guo, Sizhe An, Abhay Mittal, Srinath Sridhar
+[[paper]](https://drive.google.com/file/d/1HxrnA-mSZdUFoJFxhajJHxtqY2EbZZj7/view?usp=drive_link)    [[project]]()
+
+**TL;DR:** Propose a real-time streaming video generation framework with multi-scale patchification and attention, achieving high-quality generation at 22.8 FPS on a single H200 GPU.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV2026 </div><img src='images/UMO.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
