@@ -43,7 +43,7 @@ Recently, I mainly focused on human-centric visual content generation and multim
 
 <b><u>Zekun Li*</u></b>, Xiaoyan Cong\*, Hongyu Li, Zhiyang Dou, Chuan Guo, Abhay Mittal, Sizhe An, Srinath Sridhar
 <br>
-[[paper]](https://drive.google.com/file/d/1HxrnA-mSZdUFoJFxhajJHxtqY2EbZZj7/view?usp=drive_link)    [[project]]()
+[[paper]](https://arxiv.org/abs/2607.20940)    [[project]]()
 
 **TL;DR:** Propose a real-time streaming video generation framework with multi-scale patchification and attention, achieving high-quality generation at 22.8 FPS on a single H200 GPU.
 </div>
