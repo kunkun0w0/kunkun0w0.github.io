@@ -1,3 +1,10 @@
-_site/
-push.sh
 .DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.env
+.env.*
+_site/
+.bundle/
+.jekyll-cache/
+.sass-cache/
